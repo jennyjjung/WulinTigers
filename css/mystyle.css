@@ -1,0 +1,398 @@
+/*
+main color : #d63031
+little darker : #be2627
+*/
+
+/* ---------- BASIC SETUP ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 90px 0;
+}
+
+/* ---------- HEADING ---------- */
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 280%;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  word-spacing: 10px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 180%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #d63031;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  background-image: linear-gradient(rgba( 0,0,0,0.7),rgba(0,0,0,0.7)), url(../imgs/shoes.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  background-attachment: fixed;
+}
+
+.main-header {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imgs/main.jpeg);
+  height: 90vh;
+}
+
+.main-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  opacity: 0.7;
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+  border-radius: 50%;  
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #d63031;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  border: 1px solid #d63031;
+  color: #d63031;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: #be2627;
+  border: 1px solid #be2627;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.main-bottom-btn {
+  text-align: center;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+}
+
+input[type=submit] {
+  margin: 60px 60% 60px 40%;
+}
+
+/* ---------- PARAGRAPHS ----------*/
+
+.introduction,
+.main-bottom {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  letter-spacing: 2px;
+}
+
+.main-table p {
+  line-height: 145%;
+  width: 85%;
+  margin-left: 15%;
+  margin-bottom: 80px;
+  margin-top: 60px;
+  letter-spacing: 2px;
+}
+
+.main-bottom {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ---------- MAIN - TABLE ---------- */
+
+.main-table,
+.main-table tr,
+.main-table th {
+  width: 25%;
+}
+
+.main-table {
+  width: 100%;
+}
+
+.main-table td {
+  text-align: center;
+  vertical-align: top;
+  height: 200px;
+}
+
+.main-table th {
+  height: 60px;
+  font-size: 190%;
+  color:#d63031;
+}
+
+td h3 + p::first-letter {
+  color:#be2627;
+  font-size: 150%;
+}
+
+/* ---------- MAIN PHOTO ---------- */
+
+.main-photo {
+  padding: 0;
+}
+
+.main-photo-ul {
+  list-style: none;
+  width: 100%;
+}
+
+.main-photo-ul li {
+  display: block;
+  float: left;
+  width: 25%;
+} 
+
+.wulin-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.wulin-photo img {
+  opacity: 0.7;
+  width: 100%;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.wulin-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background-color: rgb(54, 54, 54);
+  padding: 50px;
+  font-size: 80%;
+  color:rgb(151, 151, 151)
+}
+
+.contact-info {
+  list-style: none;
+  text-align: center;
+}
+
+.contact-info li {
+  display: inline;
+  margin-right: 20px;
+
+}
+
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ------------------------------ */
+/* ----- PROGRAM & SCHEDULE ----- */
+/* ------------------------------ */
+
+.program div {
+  display: inline-block;
+  width: 33%;
+  height: 250px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  
+}
+
+.program div a {
+  text-decoration: none;
+  
+}
+
+.program div h3 {
+  margin-top: 20px;
+  color: #be2627;
+}
+
+.program div p {
+  padding: 50px 0;
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 80px;
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+.schedule-table,
+.membership-table {
+  background-color: aliceblue;
+  width: 70%;
+  margin: 80px auto 60px auto;
+  padding: 50px;
+  border-radius: 50% 20% / 10% 40%;
+  box-shadow: 5px 10px;
+}
+
+.schedule-table td,
+.membership-table td {
+  text-align: center;
+}
+
+.schedule-table th,
+.membership-table th {
+  font-weight: 300;
+}
+
+.membership-table th {
+  color:#d63031;
+}
+
+.program-schedule,
+.form {
+  background-color: rgb(241, 241, 241)
+}
+
+.class1 {
+  background-color:#ffb7b7cc;
+}
+
+.class2 {
+  background-color:#feffb7cc;
+}
+
+.class3 {
+  background-color:#b7ffc1cc;
+}
+
+/* ------------------------------ */
+/* ------ LOCATION & FORM ------- */
+/* ------------------------------ */
+
+.info-lst {
+  list-style: none;
+  margin: 60px 25%;
+}
+
+.map {
+  width: 50%;
+  display: block;
+  margin: 60px auto;
+  border-radius: 10px;
+  border: 1px solid rgb(199, 199, 199);
+}
+
+form {
+  text-align: left;
+  width: 500px;
+}
+
+#idform {
+  width: 500px
+}
+
+li > .icon {
+  font-size: 150%;
+  color: #be2627;
+}
+
+input[type=text],
+input[type=password]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
